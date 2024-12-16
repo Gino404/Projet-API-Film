@@ -1,0 +1,21 @@
+#prev, #next, #play, #pause {
+    color: #666;
+    font-size: 2.5rem;
+    display: inline-block;
+    margin: 1rem;
+}
+/* Ajout de l'opacité pour ajouter une transition  */
+#movie div{
+    /* opacity: 0; */
+    transition: opacity 1.5s ease-in-out;
+}
+/* transition vers un autre état */
+/* cacher les images */
+#movie div.show {
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+#movie div.hidden {
+    display: none;
+}
