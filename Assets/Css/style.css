@@ -1,5 +1,13 @@
-.end-footer {
+body { 
+    margin: 0;
+    background-color: #2e2e2e;
+}
+footer{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
-    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.end-footer {
     width:calc(100/5);
 }
