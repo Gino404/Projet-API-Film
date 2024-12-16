@@ -1,45 +1,27 @@
-let images = document.querySelectorAll ("img")
-let next = document.querySelector ("#next")
-let previous = document.querySelector ("#prev")
+let sliders = document.querySelector(".carouselbox")
+let scroll
+let filmPadding = 20
+
+const url = 'https://api.themoviedb.org/3/movie/popular?language=en-US&page=1';
+const options = {
+  method: 'GET',
+  headers: {
+    accept: 'application/json',
+    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1ODc0M2Y4NGRhYzAwNDBlZjEyNjgwMjMzZWU5NmEwZiIsIm5iZiI6MTczNDM0NDk4NC44MTUsInN1YiI6IjY3NjAwMTE4NWJkM2M3MmE4MmMxYzNiYiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ._wZmMme3uyW9tlwonW8YiyvgMC7zZTBAn4VG7ESRAWo'
+  }
+};
+let data = []
+fetch(url, options)
+  .then(res => res.json())
+  .then(json => console.log(json)
+  )
+  .catch(err => console.error(err));
 
 
-n=0
-images.forEach((image,index) => {
-    if (index == 0) { 
-        image.classList.add("show")
-    }
-    else { image.classList.add("hidden") } })
 
 
-next.addEventListener("click", nextimg );
-function nextimg(){
-    n++
-    if (n === images.length){
-        n = 0 
-    }
-    images[n].classList.add("show")
-    images[n].classList.remove("hidden")
-    if (n == 0 ){
-        images[images.length-1].classList.remove("show")
-        images[images.length-1].classList.add("hidden")
-    }
-    else {
-        images[n-1].classList.remove("show")
-        images[n-1].classList.add("hidden")
-    }
-    }
+showMovie()
 
-previous.addEventListener("click", previmg );
-function previmg(){
-    images[n].classList.remove('show');
-    images[n].classList.add('hidden');
-    n = (n -1) ;
-    if (n == -1){
-        images[images.length -1].classList.remove('hidden');
-        images[images.length -1].classList.add('show');
-        n = images.length -1
-    }else{
-        images[n].classList.remove('hidden');
-        images[n].classList.add('show');
-    }
-    }
+async function showMovie(){
+
+}
