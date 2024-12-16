@@ -9,5 +9,9 @@ footer{
     justify-content: space-around;
 }
 .end-footer {
-    width:calc(100/5);
+    width:calc(100%/5);
+}
+.logo{
+    height: 10%;
+    width: 15%;
 }
