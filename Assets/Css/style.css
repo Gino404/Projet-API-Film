@@ -14,7 +14,7 @@ body{
     overflow-x: hidden;
 }   
 
-.container {
+.container ,.container2 ,.container3,.container4,.container5{
     display: flex;
 
 }
@@ -90,7 +90,7 @@ p {
     justify-content: space-around;
 }
 
-.carousel .switchLeft,.carousel .switchRight {
+.switchLeft,.switchLeft2,.switchLeft3,.switchLeft4,.switchLeft5 , .switchRight,.switchRight2,.switchRight3,.switchRight4,.switchRight5 {
     color: white;
     font-weight: bold;
     height: 100%;
@@ -100,12 +100,12 @@ p {
     text-align: center;
     z-index: 3;
 }
-.carousel .switchLeft {
+.carousel .switchLeft,.switchLeft2,.switchLeft3,.switchLeft4,.switchLeft5 {
     position: absolute;
     left: -50px;
 }
 
-.carousel .switchRight {
+.carousel .switchRight,.switchRight2,.switchRight3,.switchRight4,.switchRight5 {
     position: absolute;
     right: -50px;
 }
