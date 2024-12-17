@@ -11,6 +11,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    overflow-x: hidden;
 }   
 
 .container {
@@ -83,7 +84,10 @@ p {
     height: 250px;
     width: 80%;
     position: relative;
-    background-image: url(../img/Pirate-Bannière.jpg);
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;
 }
 
 .carousel .switchLeft,.carousel .switchRight {
