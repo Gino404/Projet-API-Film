@@ -2,6 +2,7 @@ let sidenav = document.querySelector('#mySidenav');
 let openBtn = document.querySelector('#openBtn');
 let closeBtn = document.querySelector('#closeBtn');
 
+
 openBtn.onclick = openNav;
 closeBtn.onclick = closeNav;
 
@@ -103,6 +104,8 @@ document.addEventListener('DOMContentLoaded', async () =>{
   let nextPopular = document.querySelector(".switchRightPopular")
   let prevPopular = document.querySelector(".switchLeftPopular")
   let popuPopular = document.getElementById("popuPopular")
+  console.log(popuPopular);
+  
   let releasePopular = document.getElementById("releasePopular")
   let timePopular = document.getElementById("timePopular")
   let urlPopular = 'https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=28';
@@ -250,6 +253,8 @@ document.addEventListener('DOMContentLoaded', async () =>{
 }    
 
 async function ChangeUrlPopularPopu() {
+    console.log("oui");
+    
 urlPopular = "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=28"
 indexPopular = 0  
 data = await getData(urlPopular);
@@ -275,74 +280,74 @@ timePopular.addEventListener("click", ChangeUrlVotePopular);
 async function ChangeUrlPopuAnimation() {
   urlAnimation = "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=16"
   indexAnimation = 0  
-  data = await getData(urlAnimation);
-    displayData(data, "animation")
+  dataAnimation = await getData(urlAnimation);
+    displayData(dataAnimation, "animation")
   } 
   popuAnimation.addEventListener("click", ChangeUrlPopuAnimation); 
   async function ChangeUrlAnimationRelease() {
   urlAnimation = "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=primary_release_date.desc&with_genres=16"
   indexAnimation = 0  
-  data = await getData(urlAnimation);
-  displayData(data, "animation")
+  dataAnimation = await getData(urlAnimation);
+  displayData(dataAnimation, "animation")
   } 
   releaseAnimation.addEventListener("click", ChangeUrlAnimationRelease); 
   async function ChangeUrlAnimationTime() {
   urlAnimation = "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_average.asc&with_genres=16"
   indexAnimation = 0  
-  data = await getData(urlAnimation);
-  displayData(data, "animation")
+  dataAnimation = await getData(urlAnimation);
+  displayData(dataAnimation, "animation")
   } 
 timeAnimation.addEventListener("click", ChangeUrlAnimationTime); 
 
 async function ChangeUrlPopuComedy() {
   urlComedy = "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=35"
   indexComedy = 0  
-  data = await getData(urlComedy);
-    displayData(data, "comedy")
+  dataComedy = await getData(urlComedy);
+    displayData(dataComedy, "comedy")
   } 
   popuComedy.addEventListener("click", ChangeUrlPopuComedy); 
   async function ChangeUrlComedyRelease() {
   urlComedy = "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=primary_release_date.desc&with_genres=35"
   indexComedy = 0  
-  data = await getData(urlComedy);
-  displayData(data, "comedy")
+  dataComedy = await getData(urlComedy);
+  displayData(dataComedy, "comedy")
   } 
   releaseComedy.addEventListener("click", ChangeUrlComedyRelease); 
   async function ChangeUrlComedyTime() {
   urlComedy = "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_average.asc&with_genres=35"
   indexComedy = 0  
-  data = await getData(urlComedy);
-  displayData(data, "comedy")
+  dataComedy = await getData(urlComedy);
+  displayData(dataComedy, "comedy")
   } 
 timeComedy.addEventListener("click", ChangeUrlComedyTime); 
 
 async function ChangeUrlPopuHorror() {
   urlHorror = "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=27"
   indexHorror = 0  
-  data = await getData(urlHorror);
-    displayData(data, "horror")
+  dataHorror = await getData(urlHorror);
+    displayData(dataHorror, "horror")
   } 
   popuHorror.addEventListener("click", ChangeUrlPopuHorror); 
   async function ChangeUrlHorrorRelease() {
   urlHorror = "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=primary_release_date.desc&with_genres=27"
   indexHorror = 0  
-  data = await getData(urlHorror);
-  displayData(data, "horror")
+  dataHorror = await getData(urlHorror);
+  displayData(dataHorror, "horror")
   } 
   releaseHorror.addEventListener("click", ChangeUrlHorrorRelease); 
   async function ChangeUrlHorrorTime() {
   urlHorror = "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_average.asc&with_genres=27"
   indexHorror = 0  
-  data = await getData(urlHorror);
-  displayData(data, "horror")
+  dataHorror = await getData(urlHorror);
+  displayData(dataHorror, "horror")
   } 
 timeHorror.addEventListener("click", ChangeUrlHorrorTime); 
 
 async function ChangeUrlPopuWestern() {
   urlWestern = "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=37"
   indexWestern = 0  
-  data = await getData(urlWestern);
-    displayData(data, "western")
+  dataWestern = await getData(urlWestern);
+    displayData(dataWestern, "western")
   } 
   popuWestern.addEventListener("click", ChangeUrlPopuWestern); 
   async function ChangeUrlWesternRelease() {

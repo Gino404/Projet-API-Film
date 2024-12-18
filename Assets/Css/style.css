@@ -182,23 +182,20 @@ hr {
     margin-left: 20px;
 }
 
-#nav2 {
-    display: flex;
-    justify-content: space-around;
-    border-radius: 15px;
-    width: 25%;
-    margin-top: 20px;
-    margin-left: 20px;
-}
 
-#nav2 a {
+button {
+    padding: 10px 20px;
+    margin: 15px 0;
+    margin-left: 20px;
     text-decoration:none ;
     color: #fff;
     background-color: #4b4b4b;
     border-radius: 5px;
+    border: none;
+    cursor: pointer;
 }
 
-#nav2 a:hover {
+button:hover {
     background-color: darkgreen;
     transform: scale(1.1);
     transition: .3s;
@@ -327,7 +324,7 @@ footer{
 
 .intro {
     height: 7.5vh;
-    width: 20vw;
+    width: 100%;
     padding: 6px;
     box-sizing: border-box;
     position: absolute;
