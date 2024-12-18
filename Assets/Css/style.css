@@ -7,14 +7,17 @@ body{
     height: 100vh;
     width: 100%;
     background-color: #2e2e2e;
+}   
+.genres {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     overflow-x: hidden;
-}   
+    overflow-y: hidden;
+}
 
-.container ,.container2 ,.container3,.container4,.container5{
+.containerPopular ,.containerAnimation ,.containerComedy,.containerHorror,.containerWestern{
     display: flex;
 
 }
@@ -90,7 +93,7 @@ p {
     justify-content: space-around;
 }
 
-.switchLeft,.switchLeft2,.switchLeft3,.switchLeft4,.switchLeft5 , .switchRight,.switchRight2,.switchRight3,.switchRight4,.switchRight5 {
+.switchLeftPopular,.switchLeftAnimation,.switchLeftComedy,.switchLeftHorror,.switchLeftWestern , .switchRightPopular,.switchRightAnimation,.switchRightComedy,.switchRightHorror,.switchRightWestern {
     color: white;
     font-weight: bold;
     height: 100%;
@@ -100,12 +103,12 @@ p {
     text-align: center;
     z-index: 3;
 }
-.carousel .switchLeft,.switchLeft2,.switchLeft3,.switchLeft4,.switchLeft5 {
+.carousel .switchLeftPopular,.switchLeftAnimation,.switchLeftComedy,.switchLeftHorror,.switchLeftWestern {
     position: absolute;
     left: -50px;
 }
 
-.carousel .switchRight,.switchRight2,.switchRight3,.switchRight4,.switchRight5 {
+.carousel .switchRightPopular,.switchRightAnimation,.switchRightComedy,.switchRightHorror,.switchRightWestern {
     position: absolute;
     right: -50px;
 }
