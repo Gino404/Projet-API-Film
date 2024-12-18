@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Assets/Css/style.css">
+    <script defer src="Assets/Js/script.js"></script>
+    <title>TMDB</title>
+</head>
+
+<body>
+    <header>
+        <img src="./Assets/img/logoStream.png"">
+
+        <!-- MENU BURGER -->
+        <div id="mySidenav" class="sidenav">
+        <a id="closeBtn" href="#" class="close">x</a>
+        <h2>Connection :</h2>
+        <form>
+            <p class="formp">Veuillez saisir votre Email</p>
+            <input type="text">
+            <p class="formp" id="mdp">Veuillez entrer votre mot de passe</p>
+            <input type="text">
+            <button id="btnform">Envoyer</button>
+        </form>
+        </div>
+
+        <a href="#" id="openBtn">
+            <span class="icon">
+                <i class="fa-solid fa-address-card"> |Connexion</i>
+            </span>
+        </a>
+        <!-- FIN MENU BURGER -->
+    </header>
+    <main>
+        <h2 id="seemoovs">SeeMoovs !!</h2>
+        <hr>
+
+        <nav>
+            <ul>
+                <li id="nav">
+                    <a href="">Action</a>
+                    <a href="">Horreur</a>
+                    <a href="">Comédie</a>
+                    <a href="">Films d'animation</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section>
+            <div class="containersearch">
+                <div class="iconsearch">
+                    <i id="searchicon" class="search fa fa-search"></i>
+                </div>
+                <div class="inputsearch">
+                    <input type="text" placeholder="Recherchez" id="text">
+                    <i class="clear fa fa-times"></i>
+                </div>
+        </section>
+
+        <nav>
+            <ul>
+                <li id="nav2">
+                    <a href="">Populaire</a>
+                    <a href="">Date de sortie</a>
+                    <a href="">Les PIRES</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- BAR DE RECHERCHE -->
+        <div class="slidericon">
+            <i class="fa-solid fa-chevron-left"></i>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+
+        </div>
+    </main>
+</body>
+
+</html>
