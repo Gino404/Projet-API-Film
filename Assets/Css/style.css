@@ -8,6 +8,7 @@ body {
     padding: 0;
     margin: 0;
     background-color: #2e2e2e;
+    
 }
 
 img {
@@ -278,4 +279,19 @@ section {
     height: 100%;
     display:flex;
     justify-content:flex-end;
+}
+
+footer{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.end-footer {
+    width:calc(100%/5);
+}
+.logo{
+    height: 10%;
+    width: 15%;
 }
