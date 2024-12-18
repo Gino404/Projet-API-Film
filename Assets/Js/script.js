@@ -353,15 +353,15 @@ async function ChangeUrlPopuWestern() {
   async function ChangeUrlWesternRelease() {
   urlWestern = "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=primary_release_date.desc&with_genres=37"
   indexWestern = 0  
-  data = await getData(urlWestern);
-  displayData(data, "western")
+  dataWestern = await getData(urlWestern);
+  displayData(dataWestern, "western")
   } 
   releaseWestern.addEventListener("click", ChangeUrlWesternRelease); 
   async function ChangeUrlWesternTime() {
   urlWestern = "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_average.asc&with_genres=37"
   indexWestern = 0  
-  data = await getData(urlWestern);
-  displayData(data, "western")
+  dataWestern = await getData(urlWestern);
+  displayData(dataWestern, "western")
   } 
 timeWestern.addEventListener("click", ChangeUrlWesternTime); 
 
